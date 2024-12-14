@@ -14,7 +14,7 @@ inputElement.addEventListener('keyup', function(event) {
             recordlist('2074-11-11_0128_UNBN.trn');
             recordlist('2083-08-18_UNHABITAT.doc');
             recordlist('2103-06-03_AUGOV.doc');
-        } else if (cmd.includes('echo(')) {
+        } else if (cmd.includes('echo(') && cmd.includes(')')) {
             if (cmd.includes('2074-11-11_0128_UNBN.trn')) {
                 displayRecord = '[START TRANSCRIPT]<br>The following is a message from the United Nations. It has been confirmed as genuine by your local shelter leaders.<br>It is safe to leave the shelters at this moment. Radiation levels have fallen to non-lethal levels.<br>To travel outside, please put on an oxygen mask. Though radiation levels are no longer lethal, they can still pose a health risk if one is exposed to it for extended periods of time.<br>It is forecast that radiation levels will fall enough for civilian life to resume as it did pre-war by the year 2080.<br>For now, continue your shelter routines as usual.<br>We now resume your regularly scheduled programming.<br>[END TRANSCRIPT]';
                 showRecord(displayRecord);
